@@ -7,7 +7,7 @@ Created on Mon Feb 3 2025
 
 import ctypes
 import numpy as np
-from picosdk.ps4000 import ps4000 as ps
+from picosdk.ps2000 import ps2000 as ps
 from picosdk.functions import adc2mV, assert_pico_ok, mV2adc
 
 
@@ -183,7 +183,7 @@ class Picoscope_Wrapper:
         return 0
         # return self.data_transfer.time_data().magnitude
 
-    def start_a_block_acquisition(self):
+    def start_a_grab_snap(self):
 
         # ----------
         # Get Data
